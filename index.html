@@ -10,10 +10,13 @@
 <body>
 <script>
     function goToNinja() {
-        window.location.replace("gunNinja.html");
+        window.location.replace("index.html");
     }
     function goToDodge() {
         window.location.replace("dodgeball.html");
+    }
+    function goToAbout() {
+        window.location.replace("about.html");
     }
 </script>
 
@@ -37,6 +40,7 @@
         color: white;
         border: 0px solid;
         border-radius: 10px;
+        font-size: 1em;
     }
 
     img.logoMargin {
@@ -46,6 +50,10 @@
         margin-left: 20%;
         margin-right: 2%;
         border-radius: 20%;
+    }
+
+    img.table {
+        width:100%;
     }
 </style>
 
@@ -57,8 +65,9 @@
 
 <br>
 
-<button onclick="goToDodge()" class="nav" style="margin-right: 20%;" >Dodgeball of Doom</button>
-<button onclick="goToNinja()" class="nav" style="margin-right: 1%">GunNinja</button>
+<button onclick="goToAbout()" class="nav" style="margin-right: 20%;">About Me</button>
+<button onclick="goToDodge()" class="nav" style="margin-right: 1%;" >Dodgeball of Doom</button>
+<button class="nav" style="margin-right: 1%">GunNinja</button>
 
 <br>
 <br>
@@ -79,7 +88,7 @@
 <pre class="leftMargin"></pre>
 <img src="gunLogo.png" class="logoMargin"/>
 
-<p style="width: 80%;">
+<p style="width: 80%; font-size: 1.3em;">
 What do you get when you give a ninja a gun?
 Let your ninja super-speed take over and zoom through the clouds.
 Unleash epic firepower upon evil robots with over five different weapons,
@@ -91,24 +100,24 @@ Download <a href="https://itunes.apple.com/us/app/gunninja/id884611782?mt=8">her
 <table border="1px" style="margin-top: 15%; margin-left: 20%; margin-right: 20%" width="60%">
     <tr>
         <td>
-            <img src="gunPic1.png" style="width: 100%">
+            <img src="gunPic1.png" class="table">
         </td>
         <td>
-            <img src="gunPic2.png" style="width: 100%">
+            <img src="gunPic2.png" class="table">
         </td>
         <td>
-            <img src="gunPic3.png" style="width: 100%">
+            <img src="gunPic3.png" class="table">
         </td>
     </tr>
     <tr>
         <td>
-            <img src="gunPic4.png" style="width: 100%">
+            <img src="gunPic4.png" class="table">
         </td>
         <td>
-            <img src="gunPic5.png" style="width: 100%">
+            <img src="gunPic5.png" class="table">
         </td>
         <td>
-            <img src="gunPic6.png" style="width: 100%">
+            <img src="gunPic6.png" class="table">
         </td>
     </tr>
 </table>

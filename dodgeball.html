@@ -4,27 +4,121 @@
 <html lang = "en">
 
 <head>
-<meta charset="UTF-8">
-<title>Dodgeapps - Dodgeball</title>
+    <meta charset="UTF-8">
+    <title>Dodgeapps - GunNinja</title>
 </head>
 
 <body>
 <script>
     function goToNinja() {
-	    window.location.replace("gunNinja.html");
+        window.location.replace("index.html");
     }
     function goToDodge() {
         window.location.replace("dodgeball.html");
     }
+    function goToAbout() {
+        window.location.replace("about.html");
+    }
 </script>
 
+<style type="text/css" scoped>
+    h1.leftMargin {
+        float: left;
+        margin-left: 20%;
+    }
 
-<h1 align="center">Dodgeapps</h1>
-<button onclick="goToDodge()" style="float: right">Dodgeball of Doom</button>
+    h2.gunNinjaMargin {
+        float: left;
+        margin-left: 20%;
+        margin-right: 2%
+    }
 
+    button.nav {
+        float: right;
+        width: 10%;
+        height: 5em;
+        background-color: darkorange;
+        color: white;
+        border: 0px solid;
+        border-radius: 10px;
+        font-size: 1em;
+    }
 
-<button onclick="goToNinja()" style="float: right">GunNinja</button>
+    img.logoMargin {
+        float: left;
+        width: 10%;
+        height: auto;
+        margin-left: 20%;
+        margin-right: 2%;
+        border-radius: 20%;
+    }
 
+    img.table {
+        width:100%;
+    }
+</style>
+
+<br>
+<br>
+<br>
+
+<h1 class="leftMargin">Dodgeapps</h1>
+
+<br>
+
+<button onclick="goToAbout()" class="nav" style="margin-right: 20%;">About Me</button>
+<button class="nav" style="margin-right: 1%;" >Dodgeball of Doom</button>
+<button onclick="goToNinja()" class="nav" style="margin-right: 1%">GunNinja</button>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 class="gunNinjaMargin">Dodgeball of Doom</h2>
+<br>
+<img src="appleDownload.png" style="float: left;">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<pre class="leftMargin"></pre>
+<img src="dodgeLogo.jpg" class="logoMargin"/>
+
+<p style="width: 80%; font-size: 1.3em;">
+    Dodgeball of Doom is a fun and challenging game in which you drag a green and grey ball around
+    the screen to avoid a spiky and mean- looking danger ball. there are other
+    mean- looking obstacles to dodge such as missiles and red spike bombs.
+    Download <a href="https://itunes.apple.com/us/app/dodgeball-of-doom/id677873449?mt=8">here.</a>
+</p>
+<table border="1px" style="margin-top: 15%; margin-left: 20%; margin-right: 20%" width="60%">
+    <tr>
+        <td>
+            <img src="dodgePic1.jpg" class="table">
+        </td>
+        <td>
+            <img src="dodgePic2.jpg" class="table">
+        </td>
+        <td>
+            <img src="dodgePic3.jpg" class="table">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="dodgePic4.png" class="table">
+        </td>
+        <td>
+            <img src="dodgePic5.png" class="table">
+        </td>
+        <td>
+            <img src="dodgePic6.png" class="table">
+        </td>
+    </tr>
+</table>
 </body>
 
 </html>
